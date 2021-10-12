@@ -959,7 +959,6 @@ img{
      margin-top: 60px;
      background: url(../images/feedbackImage.png) no-repeat center/cover;
      z-index: 1;
-     border: 3px solid blue;
  }
  
  #feedback .overlay{
