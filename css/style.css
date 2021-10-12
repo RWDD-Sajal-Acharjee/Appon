@@ -1,0 +1,1264 @@
+:root{
+    --brandingcolor: #744fa0;
+    --mainfont:  'Open Sans', sans-serif;
+    --subfont: 'Raleway', sans-serif;
+    --headingcol: #353535;
+    --paragraphcol: #555555;
+    --overlaycol: rgba(0, 0, 0, .7);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ===================
+    common css style end
+=======================*/
+
+.ralewayfont-Bold{
+    font-family: var(--subfont);
+    font-weight: 700;
+}
+
+.openSans-reg{
+    font-family: var(--mainfont);
+    font-weight: 400;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-capitalization{
+    text-transform: capitalize;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-color-white{
+    color: white;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.justify-Content{
+    justify-content: center;
+}
+
+.align-Content{
+    align-content: center;
+}
+
+.align-Items{
+    align-items: center;
+}
+
+.justify-Cntnt-Space-btwn{
+    justify-content: space-between;
+}
+
+.align-Items-cntr{
+    align-items: center;
+}
+
+.justify-cntn-space-btwn{
+    justify-content: space-between;
+}
+
+.justify-cntn-cntr{
+    justify-content: center;
+}
+
+.flex-direct-col{
+    flex-direction: column;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.top-0{
+    top: 0;
+}
+
+.left-0{
+    left: 0;
+}
+
+.right-0{
+    right: 0;
+}
+
+.bottom-0{
+    bottom: 0;
+}
+
+/* =====================
+    typography end
+========================*/
+
+/* Some other common classes */
+
+.heading .lineshape{
+    width: 121px;
+    height: 20px;
+}
+
+.heading .lineshape .Left-line{
+    margin-right: 4px;
+}
+
+.heading .lineshape .Left-line .line-1{
+    width: 44px;
+    height: 1px;
+    margin-bottom: 2px;
+    background: var(--headingcol);
+}
+
+.heading .lineshape .Left-line .line-2{
+    width: 49px;
+    height: 1px;
+    background: var(--headingcol);
+}
+
+.heading .lineshape .Right-line{
+    margin-left: 4px;
+}
+
+.heading .lineshape .Right-line .line-3{
+    width: 44px;
+    height: 1px;
+    margin-bottom: 2px;
+    background: var(--headingcol);
+}
+
+.heading .lineshape .Right-line .line-4{
+    width: 49px;
+    height: 1px;
+    background: var(--headingcol);
+}
+
+/* End of some other common classes */
+
+/*=======================
+ Banner section start
+=========================*/
+
+#banner{
+    background: url(../images/bannerImage.jpg) no-repeat center / cover;
+    height: 698px;
+    z-index: 1;
+}
+
+#banner .sectionIcon{
+    height: 112px;
+    width: 20px;
+    top: 50%;
+    right: 15px;
+}
+
+#banner .sectionIcon a i{
+    height: 16px;
+    color: #ddd;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#banner .sectionIcon a i:hover{
+    color: var(--brandingcolor);
+}
+
+#banner .sectionIcon .circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    box-sizing: border-box;
+    transition: all linear .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#banner .sectionIcon .circle .subcircle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--brandingcolor);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    opacity: 0;
+    transition: all linear .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#banner .sectionIcon .circle:hover{
+    border-color: var(--brandingcolor);
+}
+#banner .sectionIcon .circle:hover .subcircle{
+    opacity: 1;
+}
+
+#banner .bannerContent nav .navbar{
+    height: 75px;
+    padding-top: 60px;
+}
+
+#banner .bannerContent nav .navbar .logo{
+    width: 228px;
+    height: 75px;
+}
+
+#banner .bannerContent nav .navbar .logo a img{
+    width: 100%;
+}
+
+#banner .bannerContent nav .navbar .navList{
+    width: 600px;
+    height: 75px;
+}
+
+#banner .bannerContent nav .navbar .navList ul{
+    height: 75px;
+}
+
+#banner .bannerContent nav .navbar .navList ul li .borderline{
+    width: 100%;
+    height: 1px;
+    background: var(--brandingcolor);
+    border-bottom: 1px solid var(--brandingcolor);
+    top: 15px;
+    visibility: hidden;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+#banner .bannerContent nav .navbar .navList ul li:hover .borderline{
+    visibility: visible;
+    top: 25px;
+    width: 15px;
+}
+
+#banner .bannerContent nav .navbar .navList ul li:hover a{
+    color: var(--brandingcolor);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#banner .bannerContent nav .navbar .navList ul li:last-child{
+    padding: 10px 21px;
+    background: var(--brandingcolor);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#banner .bannerContent nav .navbar .navList ul li:last-child:hover a{
+    text-shadow: 2px 6px 2px #000;
+    color: #ffff;
+     transition:  all linear .5s;
+     -webkit-transition:  all linear .5s;
+     -moz-transition:  all linear .5s;
+     -ms-transition:  all linear .5s;
+     -o-transition:  all linear .5s;
+ }
+
+#banner .bannerContent .banner-text{
+    width: 100%;
+    height: 327px;
+    margin-top: 95px;
+}
+
+#banner .bannerContent .banner-text h1{
+    font-size: 56px;
+    line-height: 61px;
+}
+
+#banner .bannerContent .banner-text h1 span{
+    color: var(--brandingcolor);
+}
+
+#banner .bannerContent .banner-text >h2{
+    font-size: 32px;
+    line-height: 35px;
+    padding: 12px 0 16px 0;
+    background: linear-gradient(to right, var(--brandingcolor), #d2fad2);
+    background-clip: text;  /*allows the text to be colored by backround*/
+    color: transparent;
+}
+
+#banner .bannerContent .banner-text .line{
+    height: 1px;
+    width: 200px;
+    background: #ddd;
+    top: 124px;
+}
+
+#banner .bannerContent .banner-text >p{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 28px 0 60px 703px
+}
+
+#banner .bannerContent .banner-text .storeContent{
+    text-align: left;
+    width: 389px;
+    height: 59px;
+}
+
+#banner .bannerContent .banner-text .storeContent .store{
+    background: #ddd;
+    width: 189px;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--brandingcolor), #d2fad2);
+    transition: all linear .2s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+#banner .bannerContent .banner-text .storeContent .store:hover{
+    background: linear-gradient(to top, var(--brandingcolor), #3f1c77);
+    box-shadow: 4px 4px 4px;
+    text-shadow: 5px 2px 2px black;
+}
+#banner .bannerContent .banner-text .storeContent .store:hover .storeText h3, #banner .bannerContent .banner-text .storeContent .store:hover .storeText h2,#banner .bannerContent .banner-text .storeContent .store:hover .storeIcon i{
+    color: #ddd;
+}
+
+#banner .bannerContent .banner-text .storeContent .store .storeIcon{
+    width: 62px;
+    height: 100%;
+}
+#banner .bannerContent .banner-text .storeContent .store .storeIcon i{
+    font-size: 33px;
+    color: var(--headingcol);
+}
+
+#banner .bannerContent .banner-text .storeContent .store .storeText h2{
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--headingcol);
+}
+
+#banner .bannerContent .banner-text .storeContent .store .storeText h3{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--paragraphcol);
+}
+
+#banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: var(--overlaycol);
+    z-index: -1;
+}
+/*=======================
+ End of Banner section
+=========================*/
+
+/*=======================
+    About section start
+=========================*/
+
+#about{
+    height: 538px;
+}
+
+#about .aboutContent .aboutText{
+    width: 50%;
+    height: 538px;
+}
+
+#about .aboutContent .aboutText .heading{
+    margin-top: 153px;
+}
+
+#about .aboutContent .aboutText .p-1 {
+	margin-top: 31px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0 14px;
+}
+
+#about .aboutContent .aboutText .p-2{
+    margin-top: 27px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 14px;
+}
+
+/*=======================
+ End of About section
+=========================*/
+
+/*=======================
+ Feature section start
+=========================*/
+
+#feature{
+    height: 654px;
+    background: #f1f1f1;
+}
+
+#feature .featureContent .heading{
+    margin: 60px 0 31px 0;
+}
+
+#feature .featureContent .features .featureList{
+    width: 370px;
+    height: 460px;
+}
+
+#feature .featureContent .features .featureList h2 {
+	font-size: 18px;
+	color: var(--headingcol);
+}
+
+#feature .featureContent .features .featureList p {
+	font-size: 14px;
+	color: var(--paragraphcol);
+	margin-top: 5px;
+}
+
+#feature .featureContent .features .featureList ul{
+    height: 100%;
+}
+
+#feature .featureContent .features .featureList ul li .lock{
+    margin-left: -9px;
+}
+
+#feature .featureContent .features .featureList ul li .icon i{
+    font-size: 42px;
+    line-height: 61px;
+    word-spacing: 5px;
+}
+
+#feature .featureContent .features .featureList ul li .listBorderLine{
+    width: 270px;
+    height: 1px;
+    background: var(--headingcol);
+    bottom: -20px;
+}
+
+#feature .featureContent .features .featureList ul li:hover i, #feature .featureContent .features .featureList ul li:hover h2, #feature .featureContent .features .featureList ul li:hover p{
+    color: var(--brandingcolor);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#feature .featureContent .features .featureList ul li:hover .listBorderLine{
+    background: var(--brandingcolor);
+    width: 100%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#feature .featureContent .features .featureList ul li:last-child .listBorderLine{
+    opacity: 0;
+
+}
+
+#feature .featureContent .features .featureList ul li:last-child:hover .listBorderLine{
+    opacity: 1;
+}
+
+#feature .featureContent .features .mobileScreen{
+    width: 370px;
+    height: 460px;
+}
+
+#feature .featureContent .features .globalWeather{
+    width: 370px;
+    height: 460px;
+}
+
+#feature .featureContent .features .globalWeather h2{
+    font-size: 18px;
+    line-height: 61px;
+    padding-top: 75px;
+    color: var(--headingcol);
+}
+
+#feature .featureContent .features .globalWeather p{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--paragraphcol);
+}
+#feature .featureContent .features .globalWeather .p-1{
+    margin: 15px 0 27px 0;
+}
+
+/*=======================
+ End of Feature section
+=========================*/
+
+/*=======================
+ Screenshot section start
+=========================*/
+
+#screenshot{
+    height: 843px;
+}
+
+#screenshot .screenshotContent .heading{
+    margin: 100px 0 61px 0;
+}
+
+#screenshot .screenshotContent .circleSection{
+    width: 130px;
+}
+ 
+#screenshot .screenshotContent .circleSection .circle{
+    width: 18px;
+    height: 18px;
+    border: 3px solid var(--headingcol);
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: all linear .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#screenshot .screenshotContent .circleSection .circle .subcircle{
+    width: 6px;
+    height: 6px;
+    opacity: 0;
+    border-radius: 50%;
+    transition: all linear .5s;
+    background: var(--brandingcolor);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#screenshot .screenshotContent .circleSection .circle:nth-child(3) .subcircle{
+    opacity: 1;
+}
+
+#screenshot .screenshotContent .circleSection .circle:nth-child(3){
+    border-color: var(--brandingcolor);
+}
+
+#screenshot .screenshotContent .circleSection .circle:hover{
+    border-color: var(--brandingcolor);
+}
+
+#screenshot .screenshotContent .circleSection .circle:hover .subcircle{
+    opacity: 1;
+}
+
+#screenshot .screenshotContent .circleSection .circle{
+    margin-top: 56px;
+    
+}
+
+#videoImage{
+    height: 498px;
+}
+
+#videoImage img{
+    width: 100%;
+    height: 100%;
+}
+
+#videoImage .overlay{
+    width: 100%;
+    height: 100%;
+    background: var(--overlaycol);
+}
+
+#videoImage .overlay i{
+    font-size: 80px;
+}
+/*=======================
+ End of Screenshot section
+=========================*/
+
+/*===============================
+ Price Awesome Feed section start
+==================================*/
+
+
+/* Price Section start */
+#priceAwesome{
+    height: 1488px;
+}
+
+#priceAwesome .AllContent .pricePlanContent{
+    height: 637px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards{
+    width: 100%;
+    margin-top: 60px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card{
+    width: 270px;
+    height: 407px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card .cardHeading{
+    height: 60px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card .cardHeading h3{
+    font-size: 18px;
+    line-height: 61px;
+    color: var(--headingcol);
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card .priceCircle{
+    height: 120px;
+    width: 120px;
+    border: 3px solid #f1f1f1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card .priceCircle h3 span{
+    font-size: 30px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card .priceCircle h4{
+    color: var(--headingcol);
+    font-size: 15px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card .cardBottom{
+    height: 187px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card .cardBottom p{
+	font-size: 15px;
+	line-height: 30px;
+	color: var(--paragraphcol);
+	padding-right: 73px;
+	padding-left: 71px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .card .signup{
+    width: 94px;
+    height: 36px;
+    bottom: -18px;
+    border: 1px solid var(--headingcol);
+    box-sizing: border-box;
+    background: #ffff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .card .signup h3{
+    color: var(--headingcol);
+    font-size: 14px;
+    line-height: 61px;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card:hover .cardHeading, #priceAwesome .AllContent .pricePlanContent .card:hover .signup{
+    background: var(--brandingcolor);
+    border-color: var(--brandingcolor);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#priceAwesome .AllContent .pricePlanContent .priceCards .card:hover .cardHeading h3, #priceAwesome .AllContent .pricePlanContent .priceCards .card:hover .signup h3{
+    color: #ffff;
+}
+
+/* End of price section */
+
+/* End of team member section */
+
+#priceAwesome .AllContent .teamMember{
+    height: 812px;
+    margin-top: 60px;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent{
+    width: 100%;
+    margin-top: 60px;
+    height: 100%;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member{
+    width: 370px;
+    height: 543px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage{
+    top: 50%;
+    transform:  translateY(-50%);
+    border-radius: 10px;
+    -webkit-transform:  translateY(-50%);
+    -moz-transform:  translateY(-50%);
+    -ms-transform:  translateY(-50%);
+    -o-transform:  translateY(-50%);
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .aboutMember{
+    height: 173px;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .aboutMember h3{
+    font-size: 18px;
+    color: var(--headingcol);
+    padding: 30px 0 15px 0;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .aboutMember h4{
+    font-size: 14px;
+    color: var(--paragraphcol);
+    padding-bottom: 20px;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .aboutMember p {
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--paragraphcol);
+	padding: 0 62px;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .overlay .social .socialIcon a i{
+    font-size: 24px;
+    color: var(--headingcol);
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .overlay .social{
+    width: 170px;
+    height: 50px;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .overlay .social .socialIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+    transition: all linear .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .overlay .social .socialIcon:hover{
+    background: #1DA1F2; 
+}
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .overlay .social .socialIcon:hover i{
+    color: #ddd; 
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage .overlay{
+    width: 0%;
+    height: 0%;
+    background: var(--overlaycol);
+    opacity: 0;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .memberImage:hover .overlay{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    box-shadow: 0 0 15px 0 black;
+    border-radius: 10px 10px 0 0;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .memberImage:hover .aboutMember{
+    box-shadow: 3px 3px 3px black;
+    transition: all linear .6s;
+    -webkit-transition: all linear .6s;
+    -moz-transition: all linear .6s;
+    -ms-transition: all linear .6s;
+    -o-transition: all linear .6s;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage:hover{
+    top: 0;
+    transform:  translateY(0%);
+    transition: all linear .5s;
+    -webkit-transform:  translateY(0%);
+    -moz-transform:  translateY(0%);
+    -ms-transform:  translateY(0%);
+    -o-transform:  translateY(0%);
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#priceAwesome .AllContent .teamMember .memberContent .member .memberImage:hover .aboutMember{
+    bottom: -173px;
+    transition: all linear .5s;
+}
+#priceAwesome .AllContent .teamMember #feedbackhead{
+    margin-top: 100px;
+}
+
+/* End of team member section */
+
+/*======================================
+    Feedback Image section start
+ ======================================*/
+
+ #feedback{
+     height: 553px;
+     margin-top: 60px;
+     background: url(../images/feedbackImage.png) no-repeat center/cover;
+     z-index: 1;
+     border: 3px solid blue;
+ }
+ 
+ #feedback .overlay{
+     width: 100%;
+     height: 100%;
+     background: var(--overlaycol);
+     z-index: -1;
+ }
+
+ #feedback .overlay .feedbackContent{
+     height: 553px;
+ }
+
+ #feedback .overlay .feedbackContent .feedbackUser{
+     width: 800px;
+     height: 220px;
+     background: #F1F1F1;
+     border-radius: 10px;
+     margin: 46px 0 51px 0;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+}
+
+#feedback .overlay .feedbackContent .feedbackUser p{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--paragraphcol);
+}
+
+#feedback .overlay .feedbackContent .feedbackUser .p-1{
+    margin: 30px 0 27px 0;
+}
+
+#feedback .overlay .feedbackContent .feedbackUser ul{
+    color: var(--brandingcolor);
+}
+
+#feedback .overlay .feedbackContent .feedbackUser h2{
+    font-size: 18px;
+    color: var(--headingcol);
+    margin-top: 10px 0 10px 0;
+}
+
+#feedback .overlay .feedbackContent .feedbackUser .arrow{
+    width: 38px;
+    height: 38px;
+    background: #f1f1f1;
+    bottom: -15px;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+ #feedback .overlay .feedbackContent .userImage{
+     width: 472px;
+     height: 150px;
+ }
+
+#feedback .overlay .feedbackContent .userImage .image{
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+}
+
+#feedback .overlay .feedbackContent .userImage .image .imgOverlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#feedback .overlay .feedbackContent .userImage .user-2 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#feedback .overlay .feedbackContent .userImage .user-2 img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#feedback .overlay .feedbackContent .userImage .user-2{
+    left: 45%;
+    transform: translate(-45%);
+    -webkit-transform: translate(-45%);
+    -moz-transform: translate(-45%);
+    -ms-transform: translate(-45%);
+    -o-transform: translate(-45%);
+}
+
+#feedback .overlay .feedbackContent .userImage .user-2:hover img{
+    border: 2px solid var(--brandingcolor);
+    box-sizing: border-box;
+}
+
+ #feedback .overlay .feedbackContent .circleSection{
+     width: 74px;
+     height: 18px;
+     margin: 24px 0 44px 0;
+ }
+
+ #feedback .overlay .feedbackContent .circleSection .circle{
+    width: 18px;
+    height: 18px;
+    border: 3px solid var(--headingcol);
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: all linear .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#feedback .overlay .feedbackContent .circleSection .circle .feedbackCircle{
+    width: 6px;
+    height: 6px;
+    opacity: 0;
+    border-radius: 50%;
+    transition: all linear .5s;
+    background: var(--brandingcolor);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#feedback .overlay .feedbackContent .circleSection .circle:nth-child(2) .feedbackCircle{
+    opacity: 1;
+}
+
+#feedback .overlay .feedbackContent .circleSection .circle:nth-child(2){
+    border-color: var(--brandingcolor);
+}
+
+#feedback .overlay .feedbackContent .circleSection .circle:hover{
+    border-color: var(--brandingcolor);
+}
+
+#feedback .overlay .feedbackContent .circleSection .circle:hover .feedbackCircle{
+    opacity: 1;
+}
+
+ /* =====================================
+    End of feedback Image section
+ ========================================= */
+
+#getINtouch{
+    height: 654px;
+    width: 100%;
+}
+
+#getINtouch .heading{
+    margin-top: 93px;
+}
+
+#getINtouch .form{
+    margin-top: 60px;
+    width: 100%;
+}
+
+#getINtouch .form input{
+    width: 370px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 5px;
+    border: 1px solid var(--headingcol);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#getINtouch .form input:focus, textarea:focus{
+    background: #734fa05e;
+    box-shadow: 3px 3px 3px black;
+    outline: none;
+}
+
+#getINtouch .form textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding:5px;
+    margin-top: 30px;
+    resize: none;
+    border: 1px solid var(--headingcol);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#getINtouch .form button{
+    width: 88px;
+    height: 33px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: var(--brandingcolor);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#getINtouch .form button:hover{
+    box-shadow: 3px 3px 3px black;
+}
+/*=======================
+ End of Price Awesome Feed section
+=========================*/
+
+/* ===============================
+    Footer section start
+================================== */
+
+#footer{
+    height: 260px;
+    background: var(--headingcol);
+}
+
+#footer  .footerContent .logo,.social,.copyright{
+    margin-top: 30px;
+}
+#footer  .footerContent .social .socialIcon a i{
+    font-size: 24px;
+    color: var(--headingcol);
+}
+
+#footer  .footerContent .social{
+    width: 290px;
+    height: 50px;
+}
+
+#footer  .footerContent .social .socialIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+    transition: all linear .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+#footer  .footerContent .social .socialIcon:hover{
+    background: #1DA1F2; 
+}
+#footer  .footerContent .social .socialIcon:hover i{
+    color: #ddd; 
+}
+
+#footer  .footerContent .copyright{
+    font-size: 14px;
+    color: #ddd;
+}
+#footer  .footerContent .copyright span{
+    color: var(--brandingcolor);
+}
+/* ===============================
+    End of Footer section
+================================== */
