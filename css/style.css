@@ -1000,12 +1000,13 @@ img{
 
 #feedback .overlay .feedbackContent .feedbackUser ul{
     color: var(--brandingcolor);
+    padding-bottom: 10px;
 }
 
 #feedback .overlay .feedbackContent .feedbackUser h2{
     font-size: 18px;
     color: var(--headingcol);
-    margin-top: 10px 0 10px 0;
+    padding-bottom: 10px;
 }
 
 #feedback .overlay .feedbackContent .feedbackUser .arrow{
