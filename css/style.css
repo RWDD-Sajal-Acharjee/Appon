@@ -978,7 +978,7 @@ img{
 
  #feedback .overlay .feedbackContent .feedbackUser{
      width: 800px;
-     height: 220px;
+     height: 222px;
      background: #F1F1F1;
      border-radius: 10px;
      margin: 46px 0 51px 0;
@@ -990,13 +990,13 @@ img{
 
 #feedback .overlay .feedbackContent .feedbackUser p {
 	font-size: 14px;
-	line-height: 20px;
 	color: var(--paragraphcol);
-	padding: 0 65px;
 }
 
 #feedback .overlay .feedbackContent .feedbackUser .p-1{
-    margin: 30px 0 27px 0;
+    margin: 20px 0 20px 0;
+	line-height: 20px;
+    padding: 0 65px;
 }
 
 #feedback .overlay .feedbackContent .feedbackUser ul{
@@ -1011,10 +1011,10 @@ img{
 }
 
 #feedback .overlay .feedbackContent .feedbackUser .arrow{
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     background: #f1f1f1;
-    bottom: -15px;
+    bottom: -16px;
     border-radius: 8px;
     transform: rotate(45deg);
     -webkit-border-radius: 8px;
