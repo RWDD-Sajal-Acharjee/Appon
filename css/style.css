@@ -790,6 +790,10 @@ img{
     color: #ffff;
 }
 
+#priceAwesome .AllContent .pricePlanContent .priceCards .card:hover{
+    box-shadow: 3px 3px 3px black;
+}
+
 /* End of price section */
 
 /* End of team member section */
@@ -857,7 +861,7 @@ img{
 	font-size: 14px;
 	line-height: 20px;
 	color: var(--paragraphcol);
-	padding: 0 62px;
+	padding: 0 62px 30px 62px;
 }
 
 #priceAwesome .AllContent .teamMember .memberContent .member .memberImage .overlay .social .socialIcon a i{
