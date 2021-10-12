@@ -988,10 +988,11 @@ img{
      -o-border-radius: 10px;
 }
 
-#feedback .overlay .feedbackContent .feedbackUser p{
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--paragraphcol);
+#feedback .overlay .feedbackContent .feedbackUser p {
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--paragraphcol);
+	padding: 0 65px;
 }
 
 #feedback .overlay .feedbackContent .feedbackUser .p-1{
